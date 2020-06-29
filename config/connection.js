@@ -1,7 +1,7 @@
 require( 'dotenv' ).config();
 
 const mysql = require('mysql');
-// const mySQL_PORT = process.env.MYSQL_PORT || 8080;
+const mySQL_PORT = process.env.MYSQL_PORT || 3306;
 
 class Database {
   constructor( config ) {
@@ -29,7 +29,7 @@ class Database {
 
 const db  = new Database({
   host: process.env.DB_HOST,
-  port: 3306,
+  port: mySQL_PORT,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
