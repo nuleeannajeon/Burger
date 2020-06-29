@@ -35,5 +35,4 @@ const db  = {
 };
 
 const connection = new Database(process.env.JAWSDB_URL || db);
-
 module.exports = connection;
