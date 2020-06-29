@@ -11,12 +11,12 @@ async function devouredBurger(){
     return burgerList.filter( burger=>burger.devoured == true );
 }
 
-async function addBurger(name, devoured){
-    return orm.insertOne(name, devoured);
+async function addBurger(name){
+    return orm.insertOne(name, false);
 }
 
-async function devourBurger(devoured, id){
-    return orm.updateOne(devoured, id);
+async function devourBurger(id){
+    return orm.updateOne(true, id);
 }
 
 module.exports = { availableBurger, devouredBurger, addBurger, devourBurger };
