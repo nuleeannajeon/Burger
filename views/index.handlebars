@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-6">
+    {{#each availBurgerData}}
+        <span class="available-burger">{{burger_name}}</span>
+        <a href='/devour/{{id}}' class="btn devour-button" type="button">Devour <i class="fas fa-hamburger"></i></a>
+        <br>
+    {{/each}}
+    </div>
+    
+    <div class="col-6">
+    {{#each devBurgerData}}
+        <div class="devour-burger">{{burger_name}}</div>
+    {{/each}}
+    </div>
+</div>
