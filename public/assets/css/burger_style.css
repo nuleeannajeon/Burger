@@ -5,6 +5,19 @@ html {
     height: 100%;
 }
 
+footer {
+    background-color: orange;
+    color: white;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 100px;  
+    margin-bottom: 0;
+    bottom: 0px;
+    left: 0px;
+    font-size: 13px;
+    text-align: center;
+}
+
 .jumbotron {
     background:linear-gradient(to bottom, rgba(218, 170, 115, 0.2) 100%,rgba(218, 170, 115, 0.2) 100%), url('../img/burger.jpg');
     background-position: center;
@@ -17,6 +30,14 @@ html {
     color: white;
     border-radius: 2rem;
     margin: 5px;
+}
+
+.col-6 h4 {
+    margin-bottom: 15px;
+}
+
+.burgerList {
+    border-right: 1px solid orangered
 }
 
 .available-burger{
@@ -37,4 +58,5 @@ html {
 
 .devour-burger {
     font-size: 20px;
+    color: gray;
 }
