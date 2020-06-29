@@ -1,7 +1,6 @@
 require( 'dotenv' ).config();
 
 const mysql = require('mysql');
-const mySQL_PORT = process.env.MYSQL_PORT || 3306;
 
 class Database {
   constructor( config ) {
@@ -27,12 +26,14 @@ class Database {
   }
 }
 
-const db  = new Database({
+const db  = {
   host: process.env.DB_HOST,
-  port: mySQL_PORT,
+  port: 3306,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
-});
+};
 
-module.exports = db;
+const connection = new Database(process.env.JAWSDB_URL || db);
+
+module.exports = connection;
