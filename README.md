@@ -17,16 +17,16 @@ This project is a burger logger with MySQL, Node, Express, Handlebars and orm. I
 
 ## Installation
 ### Local application 
-- Step 1: 'npm install dotenv express express-handlebars mysql'
-- Step 2: node server.js (app will run in localhost:8080)
+- Step 1: `npm install dotenv express express-handlebars mysql`
+- Step 2: `node server.js` (app will run in localhost:8080)
 
 ### Heroku appliaction
 - Step 1: In the input box type your favourite burger name
-- Step 2: Once the name of submitted burger is in the list of the Choice of Burger Click 'devour it' button to eat your burger
+- Step 2: Once the name of submitted burger is in the list of the Choice of Burger Click `devour it` button to eat your burger
 - Step 3: Then the burger will appear in the list You Have Eaten.
 
 ## Usage
-In the 'db' folder Use 'schema.sql' and 'seed.sql' to build a table in the database. Make sure to npm install listed on installation.
+In the `db` folder Use `schema.sql` and `seed.sql` to build a table in the database. Make sure to npm install listed on installation.
 
 ## License
 ![License](https://img.shields.io/badge/License-MIT%20License-blue)
